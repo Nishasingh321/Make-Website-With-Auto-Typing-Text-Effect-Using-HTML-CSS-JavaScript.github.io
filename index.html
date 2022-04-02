@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Make Website With Auto Typing Text Effect Using HTML CSS JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+	<nav>
+		<img src="images/logo.png" class="logo">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">PORTFOLIO</a></li>
+			<li><a href="#">SERVICES</a></li>
+		</ul>
+		<img src="images/menu.png" class="menu-icon">
+	</nav>
+	<div class="text-box">
+		<h1>I'm <span class="auto-input"></span></h1>
+		<p>You can reach out to me if you need any help in making a website for you or your business.</p>
+		<a href="#">Contact Me</a>
+		<a href="#" class="btn">Download CV</a>
+	</div>
+	<img src="images/user.png" class="user-img">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+	var typed = new Typed(".auto-input", {
+		strings:["Nisha Singh", "Web Developer", "UI Designer"],
+		typeSpeed: 100,
+		backSpeed: 100,
+		loop: true
+	})
+</script>
+</body>
+</html>
